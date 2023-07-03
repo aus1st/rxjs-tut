@@ -1,0 +1,10 @@
+<h2>Search with Rxjs Debounce</h2>
+
+<!-- <form #searchForm="ngForm">
+
+    <input type="text" id="name" name="name" [ngModel]="name" (keyup)="searchValue()">
+</form> -->
+
+<div [formGroup]="searchForm">
+    <input type="text" formControlName="name" (keyup)="searchValue()">
+</div>
